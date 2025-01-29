@@ -3,21 +3,40 @@
 
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        body {
+            font-family: 'PT Sans';
+        }
+
+        html {
+            font-size: 12pt;
+        }
+
         h3 {
-            font-size: 14pt;
+            font-size: 1.2rem;
             font-weight: bold;
+        }
+
+        textarea {
+            width: 383px;
+            resize: none;
+        }
+
+        .bezeichner {
+            font-size: 1.25rem;
         }
     </style>
 </head>
-<h1>Online Anmeldeformular für Yoga Ag</h1>
+<h1> Online Anmeldeformular für Yoga Ag</h1>
 
 <body>
     <p>Wenn du mitmachen möchtest dann melde dich hier an:
     <p></p>
     <p></p>
-    Name: <input type="Name" /> 
+    Name: <input type="Name" />
     Nachname: <input type="Nachname" />
-    <span style="margin-left: 10px;">  E-Mail:</span> <input type="Adresse" />
+    <span style="margin-left: 10px;"> E-Mail:</span> <input type="Adresse" />
     <p>Adresse: <input /> Postleitzahl: <input /> Telefonummer: <input type="Telefonummer" /></p>
     <h2> Wählen sie ihren Tag aus und ihre Zeit </h2>
     <select>
@@ -32,19 +51,27 @@
         <option>Erwahrener </option>
     </select>
     <p style="color:grey" wählen sie immer eine Option aus die zu ihnen trift></p>
-    <h3> Geschlecht</h3>
+    <span class="bezeichner"> Geschlecht</span>
     <p>männlich: <input name="geschlecht" type="radio" />
         weiblich: <input name="geschlecht" type="radio" />
         Divers:<input name="geschlecht" type="radio" />
     <p>
-        <h3> Datum </h3>
-    <p> <input name="calender" type="date"/></p>
+        <span class="bezeichner"> Datum </span>
+    <p> <input name="calender" type="date" /></p>
 
-    <p> Sitzungspaket</p>
-    <p>Unbegrenztmonatlich (150,00$ für jeden Monat) <input name="geschlecht" type="radio"/>
-       10  Sitzungen(90,00$) <input name="geschlecht" type="radio"
-       /></p>
-    
+    <span class="bezeichner">Sitzungspaket</span>
+    <p></p>
+    <input name="wahl1" type="radio" /> Unbegrenztmonatlich (150,00 € jeden Monat)
+    <p><input name="wahl2" type="radio" /> 10 Sitzungen(90,00 €)
+    <p><input name="wahl3" type="radio" /> 6 Sitzungen(50,00 €)
+    <p><input name="wahl3=" type="radio" /> 3 Sitzungen (30,00 € pro Monat)
+    <p></p>
+    <span class="bezeichner">Haben sie noch Fragen,damit wir sie beantworten können?</span>
+    <p></p>
+    <div> <textarea rows="10" name="" id=""></textarea></div>
+
+    </p>
+
 </body>
 
 </html>
